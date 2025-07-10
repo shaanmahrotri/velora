@@ -61,7 +61,7 @@
             letter-spacing: 1px;
             white-space: nowrap;
             flex-shrink: 0;
-            min-width: 80px;
+            min-width: 120px;
             text-align: center;
         }
 
@@ -418,37 +418,49 @@
         }
 
         .segment-underserved {
-            width: 200px;
-            height: 200px;
+            width: 260px;
+            height: 260px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             background: linear-gradient(135deg, #8bb3a7, #a8c4b8);
             animation: pulse 2s ease-in-out infinite;
-            max-width: 80%;
-            max-height: 80%;
+            max-width: 90%;
+            max-height: 90%;
+            font-size: 16px;
+            line-height: 1.3;
+            padding: 20px;
+            text-align: center;
         }
 
         .segment-retail {
-            width: 120px;
-            height: 120px;
-            top: 20px;
-            left: 20px;
+            width: 150px;
+            height: 150px;
+            top: 15px;
+            left: 15px;
             background: #95a5a6;
             opacity: 0.7;
-            max-width: 40%;
-            max-height: 40%;
+            max-width: 50%;
+            max-height: 50%;
+            font-size: 13px;
+            line-height: 1.2;
+            padding: 15px;
+            text-align: center;
         }
 
         .segment-traditional {
-            width: 140px;
-            height: 140px;
-            bottom: 20px;
-            right: 20px;
+            width: 170px;
+            height: 170px;
+            bottom: 15px;
+            right: 15px;
             background: #7f8c8d;
             opacity: 0.7;
-            max-width: 45%;
-            max-height: 45%;
+            max-width: 55%;
+            max-height: 55%;
+            font-size: 13px;
+            line-height: 1.2;
+            padding: 15px;
+            text-align: center;
         }
 
         @keyframes pulse {
@@ -1262,16 +1274,18 @@
             }
 
             .segment-underserved {
-                width: 120px;
-                height: 120px;
-                font-size: 12px;
+                width: 160px;
+                height: 160px;
+                font-size: 14px;
+                padding: 15px;
             }
 
             .segment-retail,
             .segment-traditional {
-                width: 60px;
-                height: 60px;
-                font-size: 10px;
+                width: 90px;
+                height: 90px;
+                font-size: 11px;
+                padding: 10px;
             }
 
             .insight-stat {
