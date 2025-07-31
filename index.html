@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora Partners - Strategic Family Office Enhancement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #8bb3a7 0%, #a8c4b8 50%, #c2d4cc 100%);
+            color: white;
+            text-align: center;
+            padding: 120px 20px 80px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 0.9;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .hero .brand-mark {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .hero .tagline {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 60px;
+            opacity: 0.95;
+            line-height: 1.3;
+        }
+
+        .hero .approach-summary {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section:nth-child(even) {
+            background: #fafafa;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #8bb3a7;
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 48px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: #5a6c7d;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Challenge Section */
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .challenge-stat {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #8bb3a7;
+            margin-bottom: 15px;
+        }
+
+        .stat-text {
+            font-size: 16px;
+            color: #5a6c7d;
+            line-height: 1.5;
+        }
+
+        .challenge-list {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .challenge-item {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .challenge-item h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .challenge-item p {
+            font-size: 15px;
+            color: #5a6c7d;
+            line-height: 1.5;
+        }
+
+        /* Partnership Areas */
+        .partnership-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 60px;
+        }
+
+        .partnership-area {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .partnership-area h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .partnership-area .subtitle {
+            font-size: 16px;
+            color: #8bb3a7;
+            font-weight: 500;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .partnership-area .description {
+            font-size: 16px;
+            color: #5a6c7d;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            padding: 8px 0;
+            font-size: 15px;
+            color: #5a6c7d;
+            border-bottom: 1px solid #f0f4f7;
+        }
+
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+
+        .service-list li strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        /* Fees Section */
+        .fees-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .fees-highlight {
+            background: linear-gradient(135deg, #8bb3a7 0%, #a8c4b8 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .fees-highlight h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .fees-highlight p {
+            font-size: 18px;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+
+        .fees-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .fees-item {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .fees-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .fees-item p {
+            font-size: 15px;
+            color: #5a6c7d;
+            line-height: 1.6;
+        }
+
+        /* Leadership Section */
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 60px;
+        }
+
+        .leader-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .leader-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            background: #f0f4f7;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .leader-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .leader-card .title {
+            font-size: 16px;
+            color: #8bb3a7;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .leader-card .bio {
+            font-size: 15px;
+            color: #5a6c7d;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* Getting Started */
+        .getting-started-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 60px;
+        }
+
+        .getting-started-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .getting-started-section h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        .getting-started-section ul {
+            list-style: none;
+        }
+
+        .getting-started-section li {
+            padding: 12px 0;
+            font-size: 15px;
+            color: #5a6c7d;
+            border-bottom: 1px solid #f0f4f7;
+        }
+
+        .getting-started-section li:last-child {
+            border-bottom: none;
+        }
+
+        .getting-started-section li strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        /* Commitment Section */
+        .commitment {
+            background: linear-gradient(135deg, #8bb3a7 0%, #a8c4b8 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .commitment h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .commitment p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero .tagline {
+                font-size: 22px;
+            }
+
+            .hero .approach-summary {
+                font-size: 18px;
+            }
+
+            .section h2 {
+                font-size: 36px;
+            }
+
+            .challenge-grid,
+            .partnership-grid,
+            .leadership-grid,
+            .getting-started-grid,
+            .fees-details {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .challenge-list {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .leader-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 100px 15px 60px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .brand-mark {
+                font-size: 18px;
+                letter-spacing: 4px;
+            }
+
+            .hero .tagline {
+                font-size: 20px;
+            }
+
+            .hero .approach-summary {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+
+            .section h2 {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>VELORA</h1>
+            <div class="brand-mark">Partners</div>
+            <p class="tagline">Strategic Family Office Enhancement</p>
+            <p class="approach-summary">We provide the additional skills and expertise that family offices require as they evolve, working alongside your existing team to leverage our network and experience.</p>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">Our Approach</div>
+                <h2>Understanding Family Offices</h2>
+                <p class="section-description">
+                    Family offices have distinct characters, each as unique as their Principal. They operate to their own rhythm, with personal priorities and preferred areas of focus that reflect generations of values and experience. We recognise that families require different capabilities throughout their journey. Rather than offering predetermined solutions, we prefer to sit with families, understand their specific circumstances, and respond accordingly. The best partnerships emerge when expertise meets genuine need. Principals and their family offices are often experts in many areas. Our role is to anticipate and provide the additional skills that naturally arise over time, ensuring each generation has access to the right capabilities when they need them most.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">The Challenge</div>
+                <h2>Capacity, Expertise & Efficiency</h2>
+            </div>
+            
+            <div class="challenge-grid">
+                <div class="challenge-stat">
+                    <div class="stat-number">66%</div>
+                    <p class="stat-text">of family offices operate with 10 or fewer staff, yet complexity continues to grow</p>
+                </div>
+                <div class="challenge-stat">
+                    <div class="stat-number">47%</div>
+                    <p class="stat-text">have formal succession plans despite this being critical for wealth transfer</p>
+                </div>
+            </div>
+
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <h4>Capacity Limits</h4>
+                    <p>Too few senior people for expanding responsibilities. Investment oversight, governance coordination, and risk management compete for the same limited bandwidth.</p>
+                </div>
+                <div class="challenge-item">
+                    <h4>Expertise Gaps</h4>
+                    <p>Specialist knowledge in alternatives, tax structuring, cybersecurity, and succession planning requires experience that's costly to build in-house.</p>
+                </div>
+                <div class="challenge-item">
+                    <h4>Efficiency Challenges</h4>
+                    <p>Governance often remains ad-hoc. Risk management varies significantly across families despite increasing regulatory complexity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Areas -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">Partnership Areas</div>
+                <h2>Two Core Areas of Partnership</h2>
+            </div>
+            
+            <div class="partnership-grid">
+                <div class="partnership-area">
+                    <h3>Review & Maintenance</h3>
+                    <p class="subtitle">Optimising what you have built</p>
+                    <p class="description">Most family offices have developed sophisticated operations over time. Our role here is straightforward: help make what exists work even better.</p>
+                    
+                    <ul class="service-list">
+                        <li><strong>Governance Excellence</strong> - Investment committee effectiveness, family board coordination, policy development</li>
+                        <li><strong>Risk Mitigation</strong> - Operational risk assessment, cybersecurity reviews, compliance management</li>
+                        <li><strong>Provider Oversight</strong> - Independent assessment of investment managers, fee analysis, performance evaluation</li>
+                        <li><strong>Digital Platform & Reporting</strong> - Enhanced analytics, technology integration, data management</li>
+                    </ul>
+                </div>
+                
+                <div class="partnership-area">
+                    <h3>Growth Agenda</h3>
+                    <p class="subtitle">Building for what comes next</p>
+                    <p class="description">Every family office reaches points where growth requires new capabilities. We help identify these moments and provide access to opportunities that might otherwise remain out of reach.</p>
+                    
+                    <ul class="service-list">
+                        <li><strong>Strategic Capacity</strong> - Alternatives access, tax optimization, next-generation preparation</li>
+                        <li><strong>Partnership Development</strong> - Family office networks, strategic alliances, knowledge sharing</li>
+                        <li><strong>Sustainability Integration</strong> - ESG frameworks, impact measurement, sustainable investment strategies</li>
+                        <li><strong>Lifestyle Coordination</strong> - Administrative efficiency, quality of life improvements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership & Fees -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">Partnership & Fees</div>
+                <h2>Aligned Interests, Sustainable Relationships</h2>
+            </div>
+            
+            <div class="fees-content">
+                <div class="fees-highlight">
+                    <h3>20-30 basis points of AUM</h3>
+                    <p>Significantly below market averages of 60-150+ basis points because we enhance existing operations rather than replace them</p>
+                </div>
+                
+                <div class="fees-details">
+                    <div class="fees-item">
+                        <h4>Performance Participation</h4>
+                        <p>5-10% on measurable outperformance ensures our success depends on delivering genuine value. When we facilitate transactions or special projects, compensation reflects value created rather than time spent.</p>
+                    </div>
+                    <div class="fees-item">
+                        <h4>Flexible Partnership Levels</h4>
+                        <p>Three partnership levels accommodate different family circumstances and needs, from quarterly strategic engagement to ongoing comprehensive advisory. All arrangements emphasize flexibility and responsiveness to your family's actual requirements.</p>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; margin-top: 40px; font-size: 16px; color: #5a6c7d;">
+                    <strong>Genuine alignment:</strong> Our interests become aligned with yours through shared success metrics, creating a different dynamic compared to traditional fee-based relationships.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">Leadership</div>
+                <h2>Experience & Expertise</h2>
+            </div>
+            
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjBmNGY3Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNWE2YzdkIiBmb250LXNpemU9IjE0Ij5Ub20gUnV0aGVyZm9yZDwvdGV4dD4KPHN2Zz4K" alt="Tom Rutherford" class="leader-image">
+                    <h3>Tom Rutherford</h3>
+                    <p class="title">Family Office and Trust Advisor</p>
+                    <div class="bio">
+                        <p>Nearly thirty years advising family offices and international trusts. Formed LOTUC Consulting in 2018 recognizing the need for strategic, corporate and investment advice incorporating sustainability alongside traditional frameworks.</p>
+                        <br>
+                        <p>Previously worked at Lombard Odier and as managing director at JPMorgan Private Bank, leading their charities and international manager due diligence teams. Initially worked at Robert Fleming & Co as both portfolio manager and equity research analyst.</p>
+                        <br>
+                        <p>Studied at the Wharton School, University of Pennsylvania and has a degree in History from the University of Edinburgh.</p>
+                    </div>
+                </div>
+                
+                <div class="leader-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjBmNGY3Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNWE2YzdkIiBmb250LXNpemU9IjE0Ij5TaGFhbiBNYWhyb3RyaTwvdGV4dD4KPHN2Zz4K" alt="Shaan Mahrotri" class="leader-image">
+                    <h3>Shaan Mahrotri</h3>
+                    <p class="title">Strategic Advisor and Investor</p>
+                    <div class="bio">
+                        <p>Accomplished operational advisor to investment houses, family offices, and UHNW individuals with over 25 years of expertise across diverse industries and geographies.</p>
+                        <br>
+                        <p>Bridges strategy and execution through deep commercial expertise and an extensive global network. Whether as trusted advisor to principals or hands-on operator with portfolio companies, focuses on driving innovation and growth that creates real, measurable value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">Getting Started</div>
+                <h2>Building Partnerships</h2>
+                <p class="section-description">The best partnerships begin with honest conversations about where you are and where you want to go.</p>
+            </div>
+            
+            <div class="getting-started-grid">
+                <div class="getting-started-section">
+                    <h3>Initial Conversations Centre On</h3>
+                    <ul>
+                        <li><strong>Governance Efficiency</strong> - Current satisfaction with decision-making clarity and committee effectiveness</li>
+                        <li><strong>Capacity Constraints</strong> - Time limitations affecting strategic thinking and planning</li>
+                        <li><strong>Specialist Expertise</strong> - Access to knowledge for alternatives, succession, or risk management</li>
+                        <li><strong>Operational Improvements</strong> - Enhancements that would increase family office effectiveness</li>
+                    </ul>
+                </div>
+                
+                <div class="getting-started-section">
+                    <h3>Development Usually Follows</h3>
+                    <ul>
+                        <li><strong>Comprehensive Assessment</strong> - Review of current capabilities and priority gaps</li>
+                        <li><strong>Immediate Improvements</strong> - Implementation of governance and risk enhancements</li>
+                        <li><strong>Strategic Opportunities</strong> - Gradual introduction as trust develops</li>
+                        <li><strong>Partnership Evolution</strong> - Growth into comprehensive relationship aligned with needs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment -->
+    <section class="commitment">
+        <div class="container">
+            <h2>Our Commitment</h2>
+            <p>Excellence in family office management comes from understanding that each family's circumstances are unique. Our role is to enhance what you've built, not replace it—providing the additional senior capacity and specialist capabilities that help your family office evolve as your needs change. We adapt to your cadence and priorities rather than imposing our own schedules or methodologies. This respect for family office culture, combined with genuine alignment through performance participation, creates partnerships built for the long term.</p>
+        </div>
+    </section>
+</body>
+</html>
